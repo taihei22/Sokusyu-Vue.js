@@ -8,11 +8,17 @@
 </head>
 <body>
     <!-- code start -->
-
+    <div id="app">
+        <!-- イベントハンドラー -->
+        <!-- 引数で値を渡している $eventはVueで決められている-->
+        <button v-on:click="onclick('こんばんは', $event)">クリック</button>
+        <!-- <button @click="onclick">クリック</button> でも可 -->
+        <p>{{message}}</p>
+    </div>
     <!-- code end -->
     
     <!-- Vue.jsを使うためのCDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="./template.js"></script>
+    <script src="./event.js"></script>
 </body>
 </html>

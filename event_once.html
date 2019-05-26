@@ -8,11 +8,14 @@
 </head>
 <body>
     <!-- code start -->
-
+    <div id="app">
+        <button v-on:click.once="onclick">現在時刻</button>
+        <p>{{message}}</p>
+    </div>
     <!-- code end -->
     
     <!-- Vue.jsを使うためのCDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="./template.js"></script>
+    <script src="./event_once.js"></script>
 </body>
 </html>

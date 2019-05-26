@@ -8,11 +8,18 @@
 </head>
 <body>
     <!-- code start -->
-
+    <div id="app">
+    <form>
+        <label for="name">氏名</label>
+        <input type="text" id="name" v-on:keyup.27="clear" v-model="name" />
+        <!-- <input type="text" id="name" v-on:keyup.esc="clear" v-model="name" /> -->
+    </form>
+    <div id="main" v-on:click.left="onclick"></div>
+    </div>
     <!-- code end -->
     
     <!-- Vue.jsを使うためのCDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="./template.js"></script>
+    <script src="./event_key.js"></script>
 </body>
 </html>
