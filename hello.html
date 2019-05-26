@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello.html</title>
+</head>
+<body>
+    <!-- code start -->
+
+    <div id="app">
+        <p>{{message}}</p>
+        <!-- v-○○はディレクティブ -->
+        <p v-text="message"></p>
+        <!-- 無効化 -->
+        <p v-pre>{{message}}</p>
+        <!-- 属性値の操作はv-bind -->
+        <a v-bind:href="url">サポートサイト</a>
+        <a :href="url">サポートサイト2</a>
+        <p>{{ 2 + 3 }}</p>
+        <p>{{Math.abs(-10)}}</p>
+        <p>{{localEmail}}</p>
+    </div>
+
+    <!-- code end -->
+    <!-- Vue.jsを使うためのCDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./hello.js"></script>
+</body>
+</html>
